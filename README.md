@@ -3,18 +3,17 @@
 A small wrapper around `claude -p` that I keep on my `PATH`.
 
 It exists so I can fire off a one-shot Claude prompt from the shell without
-typing the same flags every time. This is an example of how I set it up — not
-a polished, reusable tool.
+typing the same flags every time. 
 
 ## What it does
 
-`cl` runs `claude -p` with a few opinionated defaults:
+`cl` runs `claude -p` with a few defaults:
 
 - `--model sonnet`
 - `--effort low`
 - `--dangerously-skip-permissions`
 
-Any other flags you pass are forwarded to `claude`, and you can override the
+Any other flags I pass are forwarded to `claude`, and I can override the
 defaults:
 
 - pass `--model` / `--effort` explicitly to override those defaults
